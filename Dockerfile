@@ -18,5 +18,8 @@ RUN \
 # supervisor base configuration
 ADD supervisor.conf /etc/supervisor.conf
 
+# Run bash
+ADD bash.conf /etc/supervisor/conf.d/bash.conf
+
 # default command
 CMD ["supervisord", "-c", "/etc/supervisor.conf"]
