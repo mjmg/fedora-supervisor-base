@@ -19,4 +19,5 @@ RUN \
 ADD supervisor.conf /etc/supervisor.conf
 
 # default command
-CMD ["supervisord", "-c", "/etc/supervisor.conf"]
+#CMD ["supervisord", "-c", "/etc/supervisor.conf"]
+CMD ["/bin/bash"]
