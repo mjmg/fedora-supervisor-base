@@ -16,7 +16,7 @@ RUN \
   mkdir -p /var/log/supervisor
   
 # supervisor base configuration
-ADD supervisor.conf /etc/supervisor.conf
+ADD supervisord.conf /etc/supervisor/supervisord.conf
 
 # default command
 #CMD ["supervisord", "-c", "/etc/supervisor.conf"]
